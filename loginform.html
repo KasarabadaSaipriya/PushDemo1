@@ -1,0 +1,41 @@
+<html>
+        <head>
+                <title>Login page</title>
+        </head>
+        <body>
+                <form>
+                        <table border="1" bgcolor="lightpink" align="center">
+                                <tr>
+                                        <th colspan="2">
+                                                <u><b>Login Form</b></u>
+                                        </th>
+                                </tr>
+                                <tr>
+                                        <td>UserName</td>
+                                        <td><input type="text" id="user"></td>
+                                </tr>
+                                <tr>
+                                        <td>Password</td>
+                                        <td><input type="text" id="pass"></td>
+                                </tr>
+                                <tr>
+					<td><input type="button" name="Submit" value="Submit" onclick=showAlert() ></td>
+                                        <td><input type="Reset" name="Reset" value="Reset" ></td>
+                                </tr>
+			</table>
+		</form>
+	</body>
+	<script>
+        function showAlert() {
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+
+            if (username == "Mvsrec" && password == "itd") {
+                window.alert("Login successful");
+            } else {
+                window.alert("Login fail");
+            }
+        }
+    </script>
+
+
